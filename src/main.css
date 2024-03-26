@@ -1,0 +1,14 @@
+#root{
+
+display: flex;
+gap:20px;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.body{
+
+width: 100vh;
+height: auto;
+
+}
