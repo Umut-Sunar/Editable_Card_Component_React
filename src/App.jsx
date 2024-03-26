@@ -4,11 +4,7 @@ import Card from "./components/card";
 export default function App() {
 
 
-              function typing(ev, tagName) {
-                            setTyping(true);
-                            setFocusElement(tagName)
-
-              }
+   
 
               const [input, setInput] = useState([{
 
@@ -44,9 +40,7 @@ export default function App() {
                                                                       key={id.key}
                                                                       informations= {id}
                                                                       cardAdd={()=> add()}
-                                                                      IsTyping= {()=> typing()}
-                                                                      setTyping = {() => setTyping() }
-                                                                      setFocusElement= {() => setFocusElement()}
+                                                                  
                                                         >
                                                         </Card>
                                           )}

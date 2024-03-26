@@ -33,7 +33,7 @@ export default function Card({ cardAdd, informations,IsTyping}) {
 
 
                             } else {
-                                          alert('input should be less than 10 char')
+                                         window.alert('input should be less than 10 char')
                             }
 
 
