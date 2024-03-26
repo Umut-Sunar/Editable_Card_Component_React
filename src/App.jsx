@@ -45,6 +45,8 @@ export default function App() {
                                                                       informations= {id}
                                                                       cardAdd={()=> add()}
                                                                       IsTyping= {()=> typing()}
+                                                                      setTyping = {() => setTyping() }
+                                                                      setFocusElement= {() => setFocusElement()}
                                                         >
                                                         </Card>
                                           )}

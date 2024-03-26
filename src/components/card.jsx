@@ -5,7 +5,7 @@ import './card.css'
 import Edittext from "./editabletext";
 import FormEnterRule from "./formEnterRule";
 
-export default function Card({ cardAdd, informations }) {
+export default function Card({ cardAdd, informations,IsTyping}) {
 
 
               const [h3state, setH3state] = useState(informations.h3)
@@ -19,7 +19,11 @@ export default function Card({ cardAdd, informations }) {
               const [alert, setAlert] = useState(null)
               const [appear, setAppear] = useState(false)
 
+              function IsTyping(ev, tagName) {
+                            setTyping(true);
+                            setFocusElement(tagName)
 
+              }
               // Editabletext komponent'ine yollanan fonksiyonlar 
               function changeText(e, tag, setState) {
                             if (tag === 'h' && e.target.value.length < 15) {
